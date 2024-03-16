@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище BRDUPModelContainer" CdmEntityContainer="BRDUPEntities">
+    <EntitySetMapping Name="GameIndustry">
+      <EntityTypeMapping TypeName="BRDUPModel.GameIndustry">
+        <MappingFragment StoreEntitySet="GameIndustry">
+          <ScalarProperty Name="ID_GI" ColumnName="ID_GI" />
+          <ScalarProperty Name="Worker_ID" ColumnName="Worker_ID" />
+          <ScalarProperty Name="Project_ID" ColumnName="Project_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Project">
+      <EntityTypeMapping TypeName="BRDUPModel.Project">
+        <MappingFragment StoreEntitySet="Project">
+          <ScalarProperty Name="ID_Project" ColumnName="ID_Project" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="Deadline" ColumnName="Deadline" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Worker">
+      <EntityTypeMapping TypeName="BRDUPModel.Worker">
+        <MappingFragment StoreEntitySet="Worker">
+          <ScalarProperty Name="ID_Worker" ColumnName="ID_Worker" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
