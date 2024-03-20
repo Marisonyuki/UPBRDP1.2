@@ -9,5 +9,11 @@
     <Grid>
         <DataGrid x:Name="BDG"/>
         <Button Content="Страница2" HorizontalAlignment="Left" Margin="504,296,0,0" VerticalAlignment="Top" Height="42" Width="96" Click="Button_Click"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,296,0,0" VerticalAlignment="Top" Height="42" Width="114" Click="Button_Click_1"/>
+        <Button Content="Изменить" HorizontalAlignment="Left" Margin="10,345,0,0" VerticalAlignment="Top" Height="42" Width="114" Click="Button_Click_2"/>
+        <Button Content="Удалить" HorizontalAlignment="Left" Margin="10,392,0,0" VerticalAlignment="Top" Height="42" Width="114" Click="Button_Click_3"/>
+        <TextBox x:Name="Texter1" HorizontalAlignment="Left" Margin="154,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" Height="62"/>
+        <TextBox x:Name="Texter2" HorizontalAlignment="Left" Margin="307,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" Height="62"/>
+        <TextBox x:Name="Texter3" HorizontalAlignment="Left" Margin="471,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" Height="62"/>
     </Grid>
 </Window>

@@ -33,5 +33,39 @@ namespace UPBRDP1._2
             Window1.Show();
             Close();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Worker c = new Worker();
+            c.FirstName = Texter1.Text;
+            c.MiddleName = Texter2.Text;
+            c.LastName = Texter3.Text;
+            BRDUP.Worker.Add(c);
+            BRDUP.SaveChanges();
+            BDG.ItemsSource = BRDUP.Worker.ToList();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            if (BDG.SelectedItem != null)
+            {
+                var selected = BDG.SelectedItem as Worker;
+                selected.FirstName = Texter1.Text;
+                selected.MiddleName = Texter2.Text;
+                selected.LastName = Texter3.Text;
+                BRDUP.SaveChanges();
+                BDG.ItemsSource = BRDUP.Worker.ToList();
+            }
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            if (BDG.SelectedItem != null)
+            {
+                BRDUP.Worker.Remove(BDG.SelectedItem as Worker);
+                BRDUP.SaveChanges();
+                BDG.ItemsSource = BRDUP.Worker.ToList();
+            }
+        }
     }
 }
